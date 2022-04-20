@@ -142,10 +142,22 @@ footer {
     .picture {
         display: none;
     }
+
+    .about-page-header {
+        font-size: 85px;
+    }
+
+    .contact-header {
+        font-size: 34px;
+    }
 }
 
 @media (max-width: 360px) {
    .mini-heading {
        font-size: 75px !important;
    }
+
+    .contact {
+        font-size: 24px;
+    }
 }
