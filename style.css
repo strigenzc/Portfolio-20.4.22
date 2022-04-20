@@ -43,7 +43,7 @@ p {
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 .content {
@@ -124,40 +124,40 @@ footer {
 }
 
 .my-links {
-    text-decoration: none;
-    color: #6c63ff;
-    font-family: sans-serif;
-    font-size: small;
+  text-decoration: none;
+  color: #6c63ff;
+  font-family: sans-serif;
+  font-size: small;
 }
 
 @media (max-width: 767px) {
-    body {
-        text-align: center;
-    }
+  body {
+    text-align: center;
+  }
 
-    .paragraph-info {
-        padding: 20px;
-    }
+  .paragraph-info {
+    padding: 20px;
+  }
 
-    .picture {
-        display: none;
-    }
+  .picture {
+    display: none;
+  }
 
-    .about-page-header {
-        font-size: 85px;
-    }
+  .about-page-header {
+    font-size: 85px;
+  }
 
-    .contact-header {
-        font-size: 34px;
-    }
+  .contact-header {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 360px) {
-   .mini-heading {
-       font-size: 75px !important;
-   }
+  .mini-heading {
+    font-size: 75px !important;
+  }
 
-    .contact {
-        font-size: 24px;
-    }
+  .contact {
+    font-size: 24px;
+  }
 }
