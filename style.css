@@ -130,7 +130,7 @@ footer {
     font-size: small;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         text-align: center;
     }
@@ -144,3 +144,8 @@ footer {
     }
 }
 
+@media (max-width: 360px) {
+   .mini-heading {
+       font-size: 75px !important;
+   }
+}
