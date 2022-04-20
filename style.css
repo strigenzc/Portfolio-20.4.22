@@ -42,6 +42,10 @@ p {
   text-align: center;
 }
 
+footer {
+    text-align: center;
+}
+
 .content {
   max-width: 1500px;
   margin: auto;
@@ -119,6 +123,13 @@ p {
   text-decoration: none;
 }
 
+.my-links {
+    text-decoration: none;
+    color: #6c63ff;
+    font-family: sans-serif;
+    font-size: small;
+}
+
 @media (max-width: 768px) {
     body {
         text-align: center;
@@ -132,3 +143,4 @@ p {
         display: none;
     }
 }
+
