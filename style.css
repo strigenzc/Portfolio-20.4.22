@@ -117,3 +117,17 @@ p {
   padding: 20px 15px;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    .paragraph-info {
+        padding: 20px;
+    }
+
+    .picture {
+        display: none;
+    }
+}
