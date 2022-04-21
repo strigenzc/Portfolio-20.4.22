@@ -1,6 +1,10 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #064c72;
+  --secondary-color: #026c80;
+  --tertiary-color: #8db4ad;
+  --last-color: #ed6335;
+  --border-color-one: #ecae7d;
+  --other-color: #e9311a;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -10,6 +14,7 @@ body {
   margin-top: 100px;
   max-width: 1800px;
   text-align: center;
+  font-display: optional;
 }
 
 h1,
@@ -44,6 +49,26 @@ p {
 
 footer {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.double-border {
+  position: relative;
+  border: 5px solid var(--tertiary-color);
+  margin-top: 50px;
+  border-radius: 18px;
+}
+
+.double-border:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 10px;
+  border: 5px solid var(--primary-color);
 }
 
 .content {
@@ -53,6 +78,16 @@ footer {
 
 .mini-heading {
   font-size: 96px !important;
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 105, 124, 1) 0%,
+    rgba(227, 167, 120, 1) 56%,
+    rgba(224, 47, 24, 1) 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Pacifico", cursive;
+  font-display: optional;
 }
 
 .navigation-links {
@@ -70,20 +105,24 @@ footer {
 }
 
 .contact-link {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
 .about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 .homepage-link {
   color: var(--primary-color);
   text-align: center;
   display: block;
+}
+
+.about-page-header {
+  font-family: "Pacifico", cursive;
 }
 
 .about-paragraphs {
@@ -99,7 +138,7 @@ footer {
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 28px;
   text-decoration: none;
 }
@@ -115,7 +154,7 @@ footer {
 }
 
 .primary-link {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   box-shadow: var(--box-shadow);
   color: white;
   border-radius: 5px;
@@ -125,9 +164,13 @@ footer {
 
 .my-links {
   text-decoration: none;
-  color: #6c63ff;
+  color: var(--other-color);
   font-family: sans-serif;
   font-size: small;
+}
+
+#about-heading {
+  margin-top: 15px;
 }
 
 @media (max-width: 767px) {
@@ -137,7 +180,7 @@ footer {
   }
 
   footer {
-      padding: 20px;
+    padding: 20px;
   }
 
   .paragraph-info {
